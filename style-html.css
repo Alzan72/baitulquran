@@ -1,0 +1,55 @@
+.header-1{
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+.navbar {
+    background-color:#1D6118;
+    
+}
+#jumbotron {
+    background-image: url(gambar/quran3.large);
+    
+}
+.garis {
+    border-right: 3px solid black;
+}
+
+#profil ,#program {
+    padding-top: 5rem;
+}
+.foto img {
+    width: 100%;
+    
+}
+.bg-hijau{
+    background-color:#1D6118;
+    color: antiquewhite;
+}
+
+#galeri .row  {
+    padding: 0px;
+}
+.kontak {
+    
+}
+.kontak :hover {
+    color: rgb(17, 131, 192);
+   padding:3px; 
+}
+
+
+@media screen and (max-widt: 450px) {
+    .alamat {
+        padding-top: 100px;
+    }
+  }
+
+  @media screen and (max-width:720px) {
+    .garis {
+        border-bottom: 3px solid black;
+        border-right: none;
+    }
+    .isi-profil {
+        padding: 5px 10px;
+    }
+}

@@ -1,45 +1,224 @@
-.header-1{
-    padding-top: 140px;
-    padding-bottom: 140px;
-}
-.navbar {
-    background-color:#1D6118;
-    
-}
-#jumbotron {
-    background-image: url(gambar/quran3.large);
-    
-}
-.garis {
-    border-right: 3px solid black;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+*, body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-#profil ,#program {
-    padding-top: 5rem;
+html, body {
+    
+    background-color: #0faf4aa2;
+    
 }
-.foto img {
+
+
+.form-holder {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+}
+
+.form-holder .form-content {
+    position: relative;
+    text-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.form-content .form-items {
+    border: 3px solid #fff;
+    padding: 40px;
+    padding-left: 80px;
+    display: inline-block;
     width: 100%;
-    
-}
-.bg-hijau{
-    background-color:#1D6118;
-    color: antiquewhite;
-}
-
-#galeri .row  {
-    padding: 0px;
-}
-.kontak {
-    padding-left: 2rem;
-}
-.kontak :hover {
-    color: rgb(17, 131, 192);
-   padding:3px; 
+    min-width: 540px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: left;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
+.form-content h3 {
+    color: #fff;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
 
-@media screen and (max-widt: 450px) {
-    .alamat {
-        padding-top: 100px;
-    }
+.form-content h3.form-title {
+    margin-bottom: 30px;
+}
+
+.form-content p {
+    color: #fff;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+
+.form-content label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
+    color: #fff;
+}
+
+.form-content input[type=text], .form-content input[type=password], .form-content input[type=email], .form-content select {
+    width: 100%;
+    padding: 9px 20px;
+    text-align: left;
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    color: #8D8D8D;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-top: 16px;
+}
+
+
+.btn-primary{
+    background-color: #6C757D;
+    outline: none;
+    border: 0px;
+     box-shadow: none;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+    background-color: #495056;
+    outline: none !important;
+    border: none !important;
+     box-shadow: none;
+}
+
+.form-content textarea {
+    position: static !important;
+    width: 100%;
+    padding: 8px 20px;
+    border-radius: 6px;
+    text-align: left;
+    background-color: #fff;
+    border: 0;
+    font-size: 15px;
+    font-weight: 300;
+    color: #8D8D8D;
+    outline: none;
+    resize: none;
+    height: 120px;
+    -webkit-transition: none;
+    transition: none;
+    margin-bottom: 14px;
+}
+
+.form-content textarea:hover, .form-content textarea:focus {
+    border: 0;
+    background-color: #ebeff8;
+    color: #8D8D8D;
+}
+
+.mv-up{
+    margin-top: -9px !important;
+    margin-bottom: 8px !important;
+}
+
+.invalid-feedback{
+    color: #ff606e;
+}
+
+.valid-feedback{
+   color: #2acc80;
+}
+
+.login-dark {
+    height:1000px;
+    background:#475d62 url(../../assets/img/star-sky.jpg);
+    background-size:cover;
+    position:relative;
   }
+  
+  .login-dark form {
+    max-width:320px;
+    width:90%;
+    background-color:#1e2833;
+    padding:40px;
+    border-radius:4px;
+    transform:translate(-50%, -50%);
+    position:absolute;
+    top:50%;
+    left:50%;
+    color:#fff;
+    box-shadow:3px 3px 4px rgba(0,0,0,0.2);
+  }
+  
+  .login-dark .illustration {
+    text-align:center;
+    padding:15px 0 20px;
+    font-size:100px;
+    color:#2980ef;
+  }
+  
+  .login-dark form .form-control {
+    background:none;
+    border:none;
+    border-bottom:1px solid #434a52;
+    border-radius:0;
+    box-shadow:none;
+    outline:none;
+    color:inherit;
+  }
+  
+  .login-dark form .btn-primary {
+    background:#214a80;
+    border:none;
+    border-radius:4px;
+    padding:11px;
+    box-shadow:none;
+    margin-top:26px;
+    text-shadow:none;
+    outline:none;
+  }
+  
+  .login-dark form .btn-primary:hover, .login-dark form .btn-primary:active {
+    background:#214a80;
+    outline:none;
+  }
+  
+  .login-dark form .forgot {
+    display:block;
+    text-align:center;
+    font-size:12px;
+    color:#6f7a85;
+    opacity:0.9;
+    text-decoration:none;
+  }
+  
+  .login-dark form .forgot:hover, .login-dark form .forgot:active {
+    opacity:1;
+    text-decoration:none;
+  }
+  
+  .login-dark form .btn-primary:active {
+    transform:translateY(1px);
+  }
+  
+  
